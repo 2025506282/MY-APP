@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CommonNav from '../../components/CommonNav/CommonNav'
 import CommonBreadcrumb from '../../components/CommonBreadcrumb/CommonBreadcrumb'
+import CommonHeader from '../../components/CommonHeader/CommonHeader'
 import './Index.scss'
 import News from '../../containers/News/News'
 import About from '../../containers/About/About'
@@ -16,7 +17,9 @@ class Index extends Component {
                 <Router>
                     <div>
                         <CommonNav />
+                        <CommonHeader />
                         <main className="main">
+                           
                             <CommonBreadcrumb />
                             <Switch>
                                 <Route path="/" exact component={Home} />

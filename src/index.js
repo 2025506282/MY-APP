@@ -7,9 +7,6 @@ import RouterConfig from './router'
 ReactDOM.render(
     <RouterConfig />
     , document.getElementById('root'));
-
-
-
 // import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 // import { createStore } from 'redux';

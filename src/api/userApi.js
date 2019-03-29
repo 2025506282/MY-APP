@@ -1,7 +1,7 @@
 import request from './request'
 const api = {
-    register: '/api/user/register',
-    login: '/api/user/login'
+    register: '/user/register',
+    login: '/user/login'
 }
 export default {
     register(data) {

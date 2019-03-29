@@ -6,7 +6,7 @@ import Register from "../containers/User/Register/Register"
 import NotFound from "../containers/404/404"
 import { Provider } from 'react-redux'
 
-import store from '../redux/index'
+import store from '../reducers/index'
 export default class RouterConfig extends Component {
     render() {
         return (

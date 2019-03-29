@@ -1,6 +1,6 @@
 import axios from 'axios'
 const request = axios.create({
-    baseURL: 'http://10.86.33.191:3000/',
+    baseURL: 'http://10.86.33.191:9999/api',
     timeout: 5000
 })
 // Add a request interceptor
@@ -15,7 +15,7 @@ request.interceptors.request.use(function (config) {
 // Add a response interceptor
 request.interceptors.response.use(function (response) {
     // Do something with response data
-    return response;
+    return response.data;
   }, function (error) {
     // Do something with response error
     return Promise.reject(error);
